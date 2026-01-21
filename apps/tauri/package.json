@@ -10,9 +10,7 @@
 		"lint": "oxlint .",
 		"lint:fix": "oxlint --fix .",
 		"format": "biome format --write .",
-		"format:check": "biome format .",
-		"test": "vitest run",
-		"test:coverage": "vitest run --coverage"
+		"format:check": "biome format ."
 	},
 	"dependencies": {
 		"@my-monorepo/ui": "*",

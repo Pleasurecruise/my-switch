@@ -22,9 +22,6 @@
 		"start": {
 			"cache": false
 		},
-		"test": {
-			"cache": false
-		},
 		"dev": {
 			"inputs": ["$TURBO_DEFAULT$", ".env"],
 			"persistent": true,
@@ -48,9 +45,6 @@
 		},
 		"lint:fix": {
 			"dependsOn": ["^topo"],
-			"cache": false
-		},
-		"test:coverage": {
 			"cache": false
 		},
 		"typecheck": {

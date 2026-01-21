@@ -6,15 +6,9 @@
 		"apps/*"
 	],
 	"scripts": {
-		"dev:api": "turbo dev --filter=@my-monorepo/api",
-		"dev:web": "turbo dev --filter=@my-monorepo/web",
-		"dev:tauri": "turbo dev --filter=@my-monorepo/tauri",
-		"dev:mobile": "turbo dev --filter=@my-monorepo/mobile",
-		"dev:mobile:android": "turbo android --filter=@my-monorepo/mobile",
-		"dev:mobile:ios": "turbo ios --filter=@my-monorepo/mobile",
+		"dev": "turbo dev --filter=@my-monorepo/tauri",
+		"build": "turbo build --filter=@my-monorepo/tauri",
 		"build:ui": "turbo build --filter=@my-monorepo/ui",
-		"build:web": "turbo build --filter=@my-monorepo/web",
-		"build:tauri": "turbo build --filter=@my-monorepo/tauri",
 		"lint": "turbo lint && manypkg check",
 		"lint:fix": "turbo lint:fix",
 		"format": "biome format --write .",

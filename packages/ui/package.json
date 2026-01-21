@@ -1,0 +1,31 @@
+{
+	"name": "@my-monorepo/ui",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		"./components/*": "./src/components/*.tsx",
+		"./lib/*": "./src/lib/*.ts",
+		"./styles/*": "./src/styles/*.css"
+	},
+	"scripts": {
+		"lint": "oxlint .",
+		"lint:fix": "oxlint --fix .",
+		"format": "biome format --write .",
+		"format:check": "biome format .",
+		"check-types": "tsc --noEmit",
+		"test": "vitest run",
+		"test:coverage": "vitest run --coverage"
+	},
+	"dependencies": {
+		"@radix-ui/react-slot": "latest",
+		"class-variance-authority": "latest",
+		"clsx": "latest",
+		"lucide-react": "latest",
+		"tailwind-merge": "latest",
+		"tailwindcss": "latest"
+	},
+	"devDependencies": {
+		"@my-monorepo/tsconfig": "*"
+	}
+}

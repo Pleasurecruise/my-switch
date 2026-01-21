@@ -1,0 +1,30 @@
+{
+	"name": "@my-monorepo/tauri",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "tauri dev",
+		"build": "tauri build",
+		"check-types": "tsc --noEmit",
+		"lint": "oxlint .",
+		"lint:fix": "oxlint --fix .",
+		"format": "biome format --write .",
+		"format:check": "biome format .",
+		"test": "vitest run",
+		"test:coverage": "vitest run --coverage"
+	},
+	"dependencies": {
+		"@my-monorepo/ui": "*",
+		"@tanstack/react-query": "latest",
+		"@tauri-apps/api": "latest",
+		"@tauri-apps/plugin-opener": "latest",
+		"@trpc/client": "latest",
+		"@trpc/tanstack-react-query": "latest",
+		"superjson": "latest"
+	},
+	"devDependencies": {
+		"@my-monorepo/tsconfig": "*",
+		"@tauri-apps/cli": "latest"
+	}
+}

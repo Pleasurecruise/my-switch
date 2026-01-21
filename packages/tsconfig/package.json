@@ -1,0 +1,11 @@
+{
+	"name": "@my-monorepo/tsconfig",
+	"private": true,
+	"version": "1.0.0",
+	"files": [
+		"base.json",
+		"hono.json",
+		"react-app.json",
+		"react-library.json"
+	]
+}

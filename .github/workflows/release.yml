@@ -39,6 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           projectPath: './apps/tauri'
+          tauriScript: bunx tauri
           tagName: v__VERSION__
           releaseName: 'v__VERSION__'
           releaseBody: 'See the assets to download and install.'
